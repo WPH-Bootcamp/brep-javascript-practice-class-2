@@ -1,0 +1,62 @@
+:root {
+  --color-primary: #421abc;
+  --color-secondary: gray;
+  --color-danger: red;
+  --color-warning: yellow;
+
+  --text-small: 8px;
+  --text-medium: 16px;
+  --text-large: 24px;
+
+  --arial: Arial;
+
+  --transition-default: transform 0.3s ease-in-out 0.2s;
+}
+
+body {
+  font-family: var(--arial);
+}
+
+p {
+  color: var(--color-primary);
+  font-size: var(--text-large);
+}
+
+span {
+  color: var(--color-primary);
+  font-size: var(--text-small);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.translate:hover {
+  transform: translateX(100px);
+}
+
+.scale:hover {
+  transform: scale(1.8);
+}
+
+.rotate:hover {
+  transform: rotate(45deg);
+}
+
+.skew:hover {
+  transform: skew(20deg);
+}
+
+.transition {
+  transition: var(--transition-default);
+}

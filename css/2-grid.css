@@ -1,0 +1,21 @@
+.red {
+  background-color: red;
+  flex-shrink: 1;
+}
+.blue {
+  background-color: blue;
+  flex-shrink: 1;
+}
+.green {
+  background-color: green;
+  flex-shrink: 0;
+}
+
+/* 1. Grid Container */
+.container {
+  display: grid;
+  height: 100dvh;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+}

@@ -1,0 +1,29 @@
+.kotak {
+  width: 100px;
+  height: 100px;
+}
+
+.red {
+  background-color: red;
+  flex-shrink: 1;
+}
+.blue {
+  background-color: blue;
+  flex-shrink: 1;
+}
+.green {
+  background-color: green;
+  flex-shrink: 0;
+}
+
+/* 1. Flexbox Container */
+.container {
+  display: flex;
+  height: 200px;
+  background-color: black;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  justify-content: center; /* Main Axis */
+  align-items: center; /* Cross Axis */
+  gap: 0;
+}
